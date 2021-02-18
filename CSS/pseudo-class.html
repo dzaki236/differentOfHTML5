@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class</title>
+    <style>
+        /*kelas semu yang dimiliki oleh html,yang berarti aktif pada keadaan tertentu saja*/
+
+        /*style default pada sebuah link (a with href)*/
+        .hello:link {
+            color: rgb(255, 0, 0);
+        }
+
+        /*style ketika kursor mouse berada diatas sebuah link/element*/
+        .hello:hover {
+            font-size: 32px;
+            color: rgb(7, 160, 255);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*style ketika di klik(keadaan aktif)*/
+        .hello:active {
+            color: indigo;
+            font-style: italic;
+        }
+
+        /*style ketika sebuah link sudah pernah di kunjungi atau belom sebelumnya*/
+        .hello:visited {
+            color: indianred;
+        }
+
+        /*first-child awal dari limit(ga peduli berapapun)*/
+        li:first-child a {
+            color: black;
+        }
+
+        /*last-child akhir dari limit(ga peduli berapapun)*/
+        li:last-child a {
+            color: rgb(255, 0, 0);
+        }
+
+        /*spesifik dari limit(ga peduli berapapun,tapi)*/
+        li:nth-child(2n) a {
+            color: rgb(0, 115, 255);
+        }
+
+        /*tag awal yang di temukan*/
+        p:first-of-type{
+            color: brown;
+            font-size: 20px;
+        }
+
+        /*tag akhhir yang di temukan*/
+        p:last-of-type{
+            color: yellowgreen;
+            font-size: 20px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h1>test aja</h1>
+    <a href="gulugulu" class="hello">link hello</a>
+    <ul>
+        <li><a href="#">link 1</a></li>
+        <li><a href="#">link 2</a></li>
+        <li><a href="#">link 3</a></li>
+        <li><a href="#">link 4</a></li>
+        <li><a href="">link 5</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, reprehenderit quo! Blanditiis asperiores
+        sint nesciunt ipsam commodi! Laudantium eius hic modi autem maxime ipsa consectetur sint nobis! Dolore, eveniet.
+        Id!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, vitae veniam, ab animi nobis facilis
+        voluptas officia doloribus reprehenderit rem debitis, culpa ipsum ipsa minima consequuntur nostrum laboriosam
+        molestiae id.</p>
+</body>
+
+</html>
