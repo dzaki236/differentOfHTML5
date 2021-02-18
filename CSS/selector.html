@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        /*selector*/
+
+        /*selectornya element html*/
+        h1 {
+            font-size: 32px;
+        }
+
+        /* , diartikan sebagai dan*/
+        h1,
+        h2 {
+            color: green;
+        }
+
+        /*lebih spesifik dengan spasi*/
+        ul li a {
+            color: red;
+        }
+
+        ol li a {
+            color: rgb(164, 164, 164);
+        }
+        
+        .blog p a{
+            /*contoh penggunaannya*/
+            font-style: oblique;
+            text-decoration: none;
+        }
+        #p1 {
+            /*hanya memiliki 1 id,satu halaman hanya memiliki element 1 id dengan id tsb*/
+            color: greenyellow;
+        }
+
+        .p2 {
+            color: hotpink;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <h1>hello gaes</h1>
+    <h2>hai</h2>
+    <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat corrupti, maxime adipisci architecto
+        voluptatem assumenda cupiditate fugit, dolorem, delectus nulla repudiandae laborum eos nobis est. Aliquam animi
+        accusantium laborum ipsam.</p>
+    <p class="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat corrupti, maxime adipisci architecto
+        voluptatem assumenda cupiditate fugit, dolorem, delectus nulla repudiandae laborum eos nobis est. Aliquam animi
+        accusantium laborum ipsam.</p>
+    <ul>
+        <li><a href="#">link 1</a></li>
+        <li><a href="#">link 2</a></li>
+        <li><a href="#">link 3</a></li>
+        <li><a href="#">link 4</a></li>
+        <li><a href="">link 5</a></li>
+    </ul>
+
+    <ol>
+        <li><a href="#">link 1</a></li>
+        <li><a href="#">link 2</a></li>
+        <li><a href="#">link 3</a></li>
+        <li><a href="#">link 4</a></li>
+        <li><a href="">link 5</a></li>
+    </ol>
+
+    <div class="blog">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eos dolorum tempora, facilis odio dolore similique deleniti obcaecati exercitationem quas ut modi corporis, minus, quia deserunt. Quae enim accusantium eum <a href="#">LINK</a></p>
+    </div>
+</body>
+
+</html>
