@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inline {
+            /*kontennya nambah lebarnya nambah,tidak menambah baris baru*/
+            background-color: brown;
+            color: white;
+            /*width dan height tidak ngaruh jika menggunakan inline*/
+            width: 100px;
+        }
+
+        .inlineBlock {
+            /*ga ada element yang defaultnya inline block,kalau ada berarti dari user*/
+            display: inline-block;
+
+            background-color: pink;
+
+            /*display inline block bisa di atur tinggi dan lebarnya*/
+            width: 100px;
+            height: 100px;
+        }
+
+        .block {
+            background-color: burlywood;
+            /*akan memenuhi layar pada browser*/
+            display: block;
+            width: 600px;
+        }
+
+        .list li {
+            /*merubah display dari mulanya itu display bawaan*/
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>inline</h1>
+    <a href="" class="inline">link1</a>
+    <a href="" class="inline">link2</a>
+    <a href="" class="inline">link3</a>
+    <a href="" class="inline">link4</a>
+    <a href="" class="inline">link5dasdsdsdsd</a>
+
+    <h1>inline block</h1>
+    <a href="" class="inlineBlock">link1</a>
+    <a href="" class="inlineBlock">link2</a>
+    <a href="" class="inlineBlock">link3</a>
+    <a href="" class="inlineBlock">link4</a>
+
+    <!-- bakal di lewatin karena displaynya inline-block,dan tidak mengikuti lebar dari isinya-->
+    <a href="" class="inlineBlock">link5677898923929439843</a>
+
+    <!-- block -->
+    <div class="block">
+        <h1>block</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat soluta, est quas mollitia quam
+            necessitatibus delectus odio commodi cum suscipit exercitationem, officiis minus facilis ab maiores unde
+            molestias nam. Sequi.</p>
+    </div>
+    <div class="list">
+        <ul>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
